@@ -36,6 +36,11 @@ def vurazu(expr):
             return False
     return True
 
+def pola_dla_vedenna(formula, entry_field):
+    if formula == "":
+        formula = "0"
+    entry_field.delete(0, END)
+    entry_field.insert(0, formula)
 
 if __name__ == '__main__':
     root = Tk()
