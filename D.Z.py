@@ -42,6 +42,13 @@ def pola_dla_vedenna(formula, entry_field):
     entry_field.delete(0, END)
     entry_field.insert(0, formula)
 
+def check_input(event):
+    if event.char.isdigit() or event.char in "+-*/().":
+        return True
+    else:
+        return False
+
+
 if __name__ == '__main__':
     root = Tk()
     root["bg"] = "black"
