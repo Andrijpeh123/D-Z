@@ -29,6 +29,12 @@ def operatcii(operation, formula, entry_field):
         formula += operation
     pola_dla_vedenna(formula, entry_field)
 
+def vurazu(expr):
+    valid_chars = set('1234567890+-*/(). ')
+    for char in expr:
+        if char not in valid_chars:
+            return False
+    return True
 
 
 if __name__ == '__main__':
