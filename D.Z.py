@@ -48,6 +48,10 @@ def check_input(event):
     else:
         return False
 
+def knopku(btn, entry_field):
+    current_formula = entry_field.get()
+    operatcii(btn, current_formula, entry_field)
+
 
 if __name__ == '__main__':
     root = Tk()
